@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <title>Crud</title>
+</head>
+<body>
+  
+ <main id="box-container">
+
+   <section class="bg-left">
+     <img src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" alt="">
+   </section>
+
+   <section class="bg-right">
+
+    <header>
+      <div class="logo">Faça seu login</div>
+    </header>
+  
+      <section class="box">
+        <form onsubmit="Form.submit(event)" action="POST" id="form">
+          <input id="user" name="user" type="text" placeholder="Email ou Usuário">
+          <input id="password" name="password" type="password" placeholder="Senha">
+          <button type="submit">Entrar</button>
+        </form>
+    
+        <div class="divError">
+          <p></p>
+        </div>
+
+        <a class="button-cadas" href="#">Clique aqui para cadastrar</a>
+
+        <footer>
+          <p>Todos Direitos Reservados 2021</p>
+        </footer>
+
+      </section><!--box-->
+
+   </section><!--bg-right-->
+
+
+
+ </main>
+
+ <script src="/script.js"></script>
+</body>
+</html>

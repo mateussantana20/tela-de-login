@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+/*Global*/
+
+body {
+  font-family: 'Roboto', sans-serif;
+
+}
+
+/* .container {
+  width: min(90vw, 800px);
+  margin: auto;
+} */
+
+html {
+  font-size: 93.75%; /* 15px */
+}
+
+
+/* Lado esquerdo */
+.bg-left  {
+  display: none;
+}
+
+.bg-right {
+  margin: auto;
+  width: min(90vw, 800px);
+}
+
+/*Lado Direito*/
+
+/*Header*/
+header {
+  background: #fff;
+  text-align: center;
+  color: #5354e4;
+}
+
+header .logo {
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 4rem 2rem;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Form */
+#form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+#form input {
+  width: 100%;
+
+  padding: 1.2rem 0.8rem;
+  
+  border: 2px solid rgb(192, 186, 186);
+  border-radius: 0.4rem;
+  
+  transition:  background-color 0.2s;
+  transition: border 0.2s;
+
+  color: #5753e4;
+}
+
+#form input + input {
+  margin-top: 0.8rem;
+}
+
+#form input:focus {
+  border: 2px solid rgba(59,130,246,0.5);
+  background-color: rgba(199, 219, 252, 0.5);;
+}
+
+#form input.error {
+  border: 2px solid rgba(241, 37, 54, 0.938);
+}
+
+#form button[type="submit"] {
+  width: 100%;
+  padding: 1.2rem 0.8rem;
+  border: none;
+  border-radius: 0.4rem;
+  margin-top: 0.8rem;
+  cursor: pointer;
+  background-color: #5753E4;
+  color: #fff;
+  font-weight: bold;
+
+  transition: filter 0.2s
+}
+
+#form button[type="submit"]:hover {
+  filter: brightness(90%);
+}
+
+/*Butão Cadastrar*/
+.button-cadas {
+  margin: 2rem 0;
+  text-decoration: none;
+  color: #3B82F6
+}
+
+.button-cadas:hover {
+  color: #62799e
+}
+
+/* Div Error */
+
+.divError {
+  color: rgba(241, 37, 54, 0.938);
+  padding: 1rem 0;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 4rem 0 2rem;
+  opacity: 0.6;
+}
+
+
+@media (min-width: 800px) {
+  html {
+      font-size: 87.5%;
+  }
+
+  #box-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .bg-left  {
+    display: flex;
+    height: 100vh;
+  }
+
+  .bg-left img {
+    width: 100%;
+  }
+
+  .bg-right {
+    width: 60%;
+  }
+
+  header .logo {
+    font-size: 3rem;
+  }
+  
+
+}
